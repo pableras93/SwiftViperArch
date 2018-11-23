@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CredentialsView" customModule="CCF" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oY4-cw-ewk">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KG9-61-h1Y" userLabel="Scrollable Area View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJr-qO-jW0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxL-o8-ZwL" userLabel="Content View">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wxL-o8-ZwL" firstAttribute="top" secondItem="DJr-qO-jW0" secondAttribute="top" id="0Ma-yB-PKd"/>
+                                <constraint firstItem="wxL-o8-ZwL" firstAttribute="leading" secondItem="DJr-qO-jW0" secondAttribute="leading" id="QNS-dY-Wq3"/>
+                                <constraint firstAttribute="trailing" secondItem="wxL-o8-ZwL" secondAttribute="trailing" id="d7s-5e-l3J"/>
+                                <constraint firstAttribute="bottom" secondItem="wxL-o8-ZwL" secondAttribute="bottom" id="fXb-oE-MP3"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wxL-o8-ZwL" firstAttribute="height" secondItem="KG9-61-h1Y" secondAttribute="height" priority="250" id="7nu-Wl-6rk"/>
+                        <constraint firstItem="DJr-qO-jW0" firstAttribute="leading" secondItem="KG9-61-h1Y" secondAttribute="leading" id="OgF-pN-9HZ"/>
+                        <constraint firstItem="DJr-qO-jW0" firstAttribute="top" secondItem="KG9-61-h1Y" secondAttribute="top" id="V33-EO-zIX"/>
+                        <constraint firstAttribute="bottom" secondItem="DJr-qO-jW0" secondAttribute="bottom" id="c7g-d9-yzP"/>
+                        <constraint firstAttribute="trailing" secondItem="DJr-qO-jW0" secondAttribute="trailing" id="fQf-VX-ML3"/>
+                        <constraint firstItem="wxL-o8-ZwL" firstAttribute="width" secondItem="KG9-61-h1Y" secondAttribute="width" id="z4S-Mt-EKs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="KG9-61-h1Y" firstAttribute="top" secondItem="jEW-zd-3rf" secondAttribute="top" id="FR5-Xu-PRg"/>
+                <constraint firstItem="KG9-61-h1Y" firstAttribute="leading" secondItem="jEW-zd-3rf" secondAttribute="leading" id="Ien-3Y-5jS"/>
+                <constraint firstItem="KG9-61-h1Y" firstAttribute="trailing" secondItem="jEW-zd-3rf" secondAttribute="trailing" id="NLm-aG-ekb"/>
+                <constraint firstAttribute="bottom" secondItem="KG9-61-h1Y" secondAttribute="bottom" id="h6x-cc-zKW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="jEW-zd-3rf"/>
+            <point key="canvasLocation" x="36.5" y="-273"/>
+        </view>
+    </objects>
+</document>
