@@ -9,5 +9,5 @@
 import Foundation
 
 struct HomeFirstState: HomeState {
-    
+    var name: String
 }

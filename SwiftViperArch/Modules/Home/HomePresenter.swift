@@ -32,7 +32,16 @@ class HomePresenter: ViperPresenter {
 extension HomePresenter: HomeInterfaceToPresenterProtocol {
 
     func interfaceIsLoaded() {
-
+        
+    }
+    
+    func getName() {
+        
+        interactor?.getName( completion: { (name) in
+            self.interface?.render(HomeFirstState(name: name))
+        }, onError: { (error) in
+            
+        })
     }
 
 }

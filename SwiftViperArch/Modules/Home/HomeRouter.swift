@@ -22,7 +22,7 @@ class HomeRouter: ViperRouter {
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         let viewController:HomeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewControllerId") as! HomeViewController
         let router = HomeRouter()
-        let interactor = HomeInteractor()
+        let interactor = HomeInteractor(exampleRepository: ExampleMockupServices())
         let presenter = HomePresenter(interface: viewController, interactor: interactor, router: router)
 
         

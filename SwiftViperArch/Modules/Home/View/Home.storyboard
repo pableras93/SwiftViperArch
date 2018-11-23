@@ -35,9 +35,17 @@
                                                             <constraint firstAttribute="height" constant="128" id="mUX-Nn-5Zs"/>
                                                         </constraints>
                                                     </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0B-rr-Od5">
+                                                        <rect key="frame" x="166.66666666666666" y="458" width="42" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="Jdh-dA-JV9" firstAttribute="centerX" secondItem="rkc-nm-ugU" secondAttribute="centerX" id="FpJ-x5-DB1"/>
+                                                    <constraint firstItem="L0B-rr-Od5" firstAttribute="top" secondItem="Jdh-dA-JV9" secondAttribute="bottom" constant="49" id="N0P-er-QYh"/>
+                                                    <constraint firstItem="L0B-rr-Od5" firstAttribute="centerX" secondItem="rkc-nm-ugU" secondAttribute="centerX" id="NHd-Gl-fzm"/>
                                                     <constraint firstItem="Jdh-dA-JV9" firstAttribute="centerY" secondItem="rkc-nm-ugU" secondAttribute="centerY" id="YSW-di-TzV"/>
                                                 </constraints>
                                             </view>
@@ -70,6 +78,9 @@
                         <viewLayoutGuide key="safeArea" id="cO0-gn-Kve"/>
                     </view>
                     <navigationItem key="navigationItem" id="NJ2-d6-KTp"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="L0B-rr-Od5" id="0gc-Hd-U6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LD-Wo-g8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

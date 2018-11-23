@@ -11,9 +11,9 @@ import RxSwift
 
 struct ExampleMockupServices: ExampleRepositoryProtocol {
     
-    func getNames() -> Observable<[String]> {
-        let result = Observable<[String]>.create { (observer) -> Disposable in
-            observer.onNext(["Claudia", "Paula", "Mark", "Alfonso", "Cristina"])
+    func getName() -> Observable<String> {
+        let result = Observable<String>.create { (observer) -> Disposable in
+            observer.onNext("Pablo Barcos")
             observer.onCompleted()
             return Disposables.create()
         }
