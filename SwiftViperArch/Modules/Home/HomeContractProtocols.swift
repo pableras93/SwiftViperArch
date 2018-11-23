@@ -31,7 +31,7 @@ protocol HomePresenterToRouterProtocol: ViperPresenterToRouterProtocol, HomeShow
  This protocol will declare all methods connecting the Presenter with the Interactor.
  */
 protocol HomePresenterToInteractorProtocol: ViperPresenterToInteractorProtocol {
-
+    func getName(completion: @escaping (String) -> (), onError: @escaping (Error) -> ())
 }
 
 
@@ -40,7 +40,7 @@ protocol HomePresenterToInteractorProtocol: ViperPresenterToInteractorProtocol {
  This protocol will declare all methods connecting the Interface with the Presenter.
  */
 protocol HomeInterfaceToPresenterProtocol: ViperInterfaceToPresenterProtocol, HomeShowScreenProtocol, ViperComponentsSubscriptionsProtocol {
-
+    func getName()
 }
 
 //MARK: - Presenter -> Interface

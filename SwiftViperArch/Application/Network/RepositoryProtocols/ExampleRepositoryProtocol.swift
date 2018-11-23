@@ -16,7 +16,7 @@ protocol ExampleRepositoryProtocol {
      
      - returns: Observable of type String.
      */
-    func getNames() -> Observable<[String]>
+    func getName() -> Observable<String>
     
     
 }
