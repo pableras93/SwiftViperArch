@@ -1,2 +1,2 @@
 # SwiftViperArch
-A base VIPER architecture for a Swift project
+A base VIPER architecture with RxSwift for a Swift project
