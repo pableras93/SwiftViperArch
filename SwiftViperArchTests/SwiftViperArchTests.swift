@@ -14,6 +14,7 @@ class SwiftViperArchTests: XCTestCase {
 
     
     var homePresenter: HomePresenter!
+    var homeInteractor: HomeInteractor!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,6 +24,7 @@ class SwiftViperArchTests: XCTestCase {
         let router = HomeRouter()
         let interactor = HomeInteractor(exampleRepository: ExampleMockupServices())
         self.homePresenter = HomePresenter(interface: viewController, interactor: interactor, router: router)
+        self.homeInteractor = HomeInteractor(exampleRepository: ExampleMockupServices())
     }
 
     override func tearDown() {
@@ -35,6 +37,20 @@ class SwiftViperArchTests: XCTestCase {
 
         let suma = self.homePresenter.suma(10, 10)
         XCTAssertEqual(suma,20,"Hubo un error al ejecutar el test.")
+    }
+    
+    func testServiceExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var nameFinal:String?
+        let interactor = HomeInteractor(exampleRepository: ExampleMockupServices())
+        interactor.getName(completion: { (name) in
+            nameFinal = name
+        }) { (error) in
+            
+        }
+        XCTAssertEqual(nameFinal, "Pablo Barcos")
+        
     }
 
 }
