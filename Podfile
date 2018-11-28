@@ -7,7 +7,8 @@ target 'SwiftViperArch' do
   use_frameworks!
 
   pod 'RxSwift'
-  pod 'Alamofire', '~> 4.7'
-  pod 'RxAlamofire', '~> 4.1.0'
+  pod 'RxTest'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
 
 end
