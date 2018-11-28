@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5A8220CBD50EF89DB79FC9205EBF8FB"
+               BlueprintIdentifier = "167105B3BC9C005B26568D3D87553AB1"
                BuildableName = "Pods_SwiftViperArch.framework"
                BlueprintName = "Pods-SwiftViperArch"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5A8220CBD50EF89DB79FC9205EBF8FB"
+            BlueprintIdentifier = "167105B3BC9C005B26568D3D87553AB1"
             BuildableName = "Pods_SwiftViperArch.framework"
             BlueprintName = "Pods-SwiftViperArch"
             ReferencedContainer = "container:Pods.xcodeproj">

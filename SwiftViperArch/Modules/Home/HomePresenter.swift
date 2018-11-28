@@ -24,6 +24,10 @@ class HomePresenter: ViperPresenter {
     override func stateFromComponent(_ state: ViperStateProtocol) {
         super.stateFromComponent(state)
     }
+    
+    func suma(_ a:Int, _ b:Int) -> Int {
+        return a + b
+    }
 
 }
 
