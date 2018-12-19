@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F38C63021CA9F2200EC52A5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38C62F21CA9F2200EC52A5 /* UIViewExtension.swift */; };
 		6F68174E21A80BE3005AC9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68174D21A80BE3005AC9BC /* AppDelegate.swift */; };
 		6F68175521A80BE4005AC9BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F68175421A80BE4005AC9BC /* Assets.xcassets */; };
 		6F68176321A80BE5005AC9BC /* SwiftViperArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68176221A80BE5005AC9BC /* SwiftViperArchTests.swift */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		5583B67792E650797CDE9C78 /* Pods_SwiftViperArch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftViperArch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F38C62F21CA9F2200EC52A5 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		6F68174A21A80BE3005AC9BC /* SwiftViperArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftViperArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F68174D21A80BE3005AC9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F68175421A80BE4005AC9BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				6F6817BC21A822B9005AC9BC /* UIColorExtension.swift */,
 				6F6817BE21A822F5005AC9BC /* UIFontExtension.swift */,
 				6F6817C021A82334005AC9BC /* CGFloatExtension.swift */,
+				6F38C62F21CA9F2200EC52A5 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				6F6817A821A81EE7005AC9BC /* NetworkCommonConfigInfo.swift in Sources */,
 				6F6817AA21A81F12005AC9BC /* NetworkRestClient.swift in Sources */,
 				6F68178A21A81781005AC9BC /* ViperContractProtocols.swift in Sources */,
+				6F38C63021CA9F2200EC52A5 /* UIViewExtension.swift in Sources */,
 				6F6817A621A81E74005AC9BC /* NetworkBaseConfigInfo.swift in Sources */,
 				6F6817D721A8251D005AC9BC /* ExampleComponentPresenter.swift in Sources */,
 				6F6817BA21A82061005AC9BC /* ExampleMockupService.swift in Sources */,
@@ -864,7 +868,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -880,7 +887,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -896,7 +906,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -913,7 +927,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -929,7 +947,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -945,7 +967,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCNMX53526;
 				INFOPLIST_FILE = SwiftViperArchUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pablobarcos.SwiftViperArchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
