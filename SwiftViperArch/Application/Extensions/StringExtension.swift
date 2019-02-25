@@ -27,6 +27,13 @@ extension String {
             return self + " %"
         }
     }
+    
+    func validatePhone() -> Bool {
+        let PHONE_REGEX = "^(\\+\\d{1,3})?\\d{9,15}$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)
+        let result =  phoneTest.evaluate(with: self)
+        return result
+    }
 }
 
 // MARK: - Private methods
